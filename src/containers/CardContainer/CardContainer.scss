@@ -1,0 +1,19 @@
+@use "../../assets/sass/variables" as *;
+
+
+main{
+    > h1 {
+        color: $color-primary;
+    }
+    .card-container {
+        margin-top: 1rem;
+        //align-self: center;
+        display: grid;
+        //grid-template-columns: 10% 10% 10%;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        row-gap: 10px;
+        column-gap: 10px;
+        //gap: 1rem;
+        justify-items: center;
+    }  
+}

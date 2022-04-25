@@ -1,10 +1,14 @@
 import './App.scss';
+// import Nav from "./components/Nav/Nav"
+import CardContainer from "./containers/CardContainer/CardContainer"
 
 const App = () => {
   return (
-    <>
-    <p>test</p>
-    </>
+    <div>
+      {/* <Nav/> */}
+      <p>test</p>
+      <CardContainer/>
+    </div>
   );
 }
 
