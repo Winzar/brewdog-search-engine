@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     background-color: $color-black;
-    max-width: 200px;
+    max-width: 500px; //originally set to 200px
     //height: auto;
     border-radius: 3px;
     overflow: hidden;
@@ -27,9 +27,11 @@
       gap: 1rem;
 
       > .card__heading {
-        font-size: 1.5rem;
+        //originally 1.5
+        font-size: 1 rem;
         font-weight: normal;
         align-self: center;
+        text-align: center;
         color: $color-primary;
       }
       > .card__button{
