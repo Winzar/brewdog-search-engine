@@ -17,7 +17,7 @@ const SearchBox = ({ searchTerm, searchTermChangeHandler, searchResultCount }) =
         onChange={searchTermChangeHandler}
         value={searchTerm}
       />
-      <p> {searchResultText}</p>
+      <p className="search-box__results"> {searchResultText}</p>
     </div>
   );
 };

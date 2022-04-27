@@ -4,14 +4,15 @@
 
 .search-box {
     //background-color: #eee;
-    text-align: center;
+    //text-align: center;
+
     &__name-search {
         padding: 5px;
         font-size: 16px;
         border: 2px white solid;
         border-radius: 5px;
         color: $color-black;
-    
+        
         &:focus {
           border: 2px grey solid;
           outline: none;
@@ -26,12 +27,14 @@
     
     // }
 
-    label {
+    > label {
         margin: 10px 2px;
     }
 
     &__results {
-        margin: 15px 2px;
+        text-align: center;
+        //background-color: red;
+        //margin: 15px 2px;
     }
 
 }

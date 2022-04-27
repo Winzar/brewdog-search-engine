@@ -32,6 +32,7 @@ const App = () => {
     fetch("https://api.punkapi.com/v2/beers")
       .then((response) => response.json())
       .then((beerObjects) => {
+        //beerObjects is just an element in this case
         console.log(beerObjects);
         setBeers(beerObjects);
       });
