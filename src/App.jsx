@@ -1,14 +1,14 @@
 import "./App.scss";
 import Nav from "./components/Nav/Nav";
 import CardContainer from "./containers/CardContainer/CardContainer";
+//import beerArr from "./data/data";
 import { useState, useEffect } from "react";
-import beerArr from "./data/data";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  // const [beers, setBeers] = useState([]);
+  const [beers, setBeers] = useState([]);
 
-  const filteredBeers = beerArr.filter((beer) => {
+  const filteredBeers = beers.filter((beer) => {
     return beer.name.toLowerCase().startsWith(searchTerm);
   });
 
@@ -16,6 +16,7 @@ const App = () => {
   console.log(filteredBeers);
 
   const searchTermChangeHandler = (event) => {
+    //handles changes in the search bar at the top
     const input = event.target.value.toLowerCase();
     setSearchTerm(input);
   };
@@ -27,22 +28,23 @@ const App = () => {
   // //function for checking false true state of checkboxes
   // // then use function within useEffect
 
-  // useEffect(() => {
-  //   fetch("https://api.punkapi.com/v2/beers?page=")
-  //     .then((response) => response.json())
-  //     .then((userObjects) => {
-  //       console.log(userObjects);
-  //       setBeers(userObjects);
-  //     });
-  // }, [searchTerm]); // has to be changed based upon filters + the search engine - doesn't care about true or false just cares about change
-  // // open up postman and play around with the API
+  useEffect(() => {
+    fetch("https://api.punkapi.com/v2/beers")
+      .then((response) => response.json())
+      .then((beerObjects) => {
+        console.log(beerObjects);
+        setBeers(beerObjects);
+      });
+  }, [searchTerm]); // has to be changed based upon filters + the search engine - doesn't care about true or false just cares about change
+  // open up postman and play around with the API
 
-  // console.log("after fetch");
+  console.log("after fetch");
 
   return (
     <div>
       <Nav searchTerm={searchTerm} searchTermChangeHandler={searchTermChangeHandler} searchResultCount={filteredBeers.length} />
 
+      {/* <CardContainer beerArr={filteredBeers} /> */}
       <CardContainer beerArr={filteredBeers} />
     </div>
   );
