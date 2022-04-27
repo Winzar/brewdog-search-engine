@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/brewdog-search-engine/static/css/main.5bf5efa4.css",
+    "main.js": "/brewdog-search-engine/static/js/main.c6826a86.js",
+    "static/media/BrewdogLogo.png": "/brewdog-search-engine/static/media/BrewdogLogo.7ac3bd5e97899b68bd79.png",
+    "index.html": "/brewdog-search-engine/index.html",
+    "main.5bf5efa4.css.map": "/brewdog-search-engine/static/css/main.5bf5efa4.css.map",
+    "main.c6826a86.js.map": "/brewdog-search-engine/static/js/main.c6826a86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bf5efa4.css",
+    "static/js/main.c6826a86.js"
+  ]
+}
