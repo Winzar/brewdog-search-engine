@@ -14,16 +14,16 @@ const Nav = ({ searchTerm, searchTermChangeHandler, searchResultCount }) => {
       <div className="nav__lower">
         <div>
           <input type="checkbox" id="checkbox-1" />
-          <label htmlFor="checkbox-1"> 1</label>
+          <label htmlFor="checkbox-ABV"> ABV value great than 6%</label>
         </div>
         <div>
           <input type="checkbox" id="checkbox-2" />
-          <label htmlFor="checkbox-2"> 2</label>
+          <label htmlFor="checkbox-Classic"> Brewed before 2010</label>
         </div>
 
         <div>
           <input type="checkbox" id="checkbox-3" />
-          <label htmlFor="checkbox-3"> 3</label>
+          <label htmlFor="checkbox-PH"> pH lower than 4</label>
         </div>
       </div>
     </nav>
