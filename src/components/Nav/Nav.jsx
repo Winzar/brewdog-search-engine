@@ -23,7 +23,7 @@ const Nav = ({ searchTerm, searchTermChangeHandler, searchResultCount, abvFilter
 
         <div>
           <input type="checkbox" id="checkbox-3" name="phCheckbox" value="phCheckbox" onClick={phFilterChangeHandler} />
-          <label htmlFor="checkbox-PH"> pH lower than 4</label>
+          <label htmlFor="checkbox-PH"> PH lower than 4</label>
         </div>
       </div>
     </nav>

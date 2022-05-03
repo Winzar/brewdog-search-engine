@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     background-color: $color-black;
-    width: 500px; // originally not set but set due to some cards buggin gout
+    //width: 500px; // originally not set but set due to some cards bugging out - later addition - messes with phone size
+    min-width: 500px;
     max-width: 500px; //originally set to 200px
     //height: auto;
     border-radius: 3px;
@@ -38,12 +39,20 @@
       > .card__button{
         border: none;
         border-radius: 0.5rem;
-        opacity: 0.8;
+        opacity: 1;
         color: $color-primary;
+        background-color: white;
       }
       > .card__text {
         color: $color-secondary;
         text-align: center;
+      }
+      > .card__textTagline {
+        font-style: italic;
+        color: $color-secondary;
+        text-align: center;
+        //font-size: 1px;
+        //background-color: red;
       }
       > .card__types {
       list-style-position:inside;
@@ -53,4 +62,13 @@
         text-align: center;
       }
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .card{
+    min-width: 0px;
+    //justify-content: space-evenly;
+    //gap: 20px;
+  }
+
 }

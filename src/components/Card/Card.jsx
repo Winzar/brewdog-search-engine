@@ -14,11 +14,12 @@ const Card = ({ id, image, name, description, foodPairing, ph, abv, ibu, tagline
         <h4 className="card__heading">
           {capitalisedName} #{id}
         </h4>
-        <p className="card__text"> {tagline} </p>
+        <p className="card__textTagline"> {tagline} </p>
         <p className="card__text">
           {" "}
-          <b>ph:</b> {ph} <b>abv:</b>
-          {abv} <b>ibu:</b>
+          <b>PH: </b>
+          {ph} <b>ABV: </b>
+          {abv} <b>IBU: </b>
           {ibu}{" "}
         </p>
         <h4 className="card__heading"> Description:</h4>
@@ -31,7 +32,7 @@ const Card = ({ id, image, name, description, foodPairing, ph, abv, ibu, tagline
         <h4 className="card__heading">First Brewed:</h4>
         <p className="card__text">{firstBrewed}</p>
         <button className="card__button" onClick={handleClick}>
-          Give ❤️
+          ❤️
         </button>
         <p className="card__text">My ❤️ rating: {rating}</p>
       </div>
